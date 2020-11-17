@@ -23,7 +23,7 @@
     height: 36px;
     background: #FFDE2F;
     border-radius: 4px;
-    display: flex;
+    display: none;
     align-items: center;
     text-align: center;
     border-radius: 0;
@@ -32,6 +32,10 @@
     font-size: 14px;
     line-height: 16px;
     font-family: 'Roboto';
+    margin-top: 0;
+    &_active {
+        display: flex;
+    }
 }
 .btn_form {
     background: #FFF629;

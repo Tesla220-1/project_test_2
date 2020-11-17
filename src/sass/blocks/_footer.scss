@@ -57,11 +57,15 @@
     }
     &__app-icon {
         margin-right: 12px;
+        width: 106px;
+        max-height: 38px;
         &:last-child {
             margin-right: 0;
         }
         img {
-            object-fit: cover;
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;    
         }
     }
 
@@ -96,12 +100,16 @@
     }
     &__icon {
         margin-right: 15px;
+        max-width: 26px;
+        max-height: 24px;
         &:last-child {
             margin-right: 0;
         }
         a {
             img {
+                max-height: 100%;
                 max-width: 100%;
+                object-fit: cover;   
             }
         }
     }

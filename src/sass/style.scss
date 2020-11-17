@@ -10,9 +10,11 @@
 }
 
 .container {
-    width: 1140px;
+    width: 1200px;
     margin: 0 auto;
 }
+
+@import 'media';
 
 @import 'blocks/header';
 @import 'blocks/nav';

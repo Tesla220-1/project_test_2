@@ -1,5 +1,4 @@
 .header {
-    min-height: 90px;
     position: relative;
     font-family: 'Roboto', sans-serif;
     /* box-shadow: inset 0px -10px 5px 0px rgba(231, 235, 235, 0.897); */
@@ -13,11 +12,15 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 0;
-        width: 770px;
+        width: 776px;
     }
     &__bottom-item {
         font-size: 14px;
         line-height: 16px;
+        padding-bottom: 11px;
+        &_active {
+            border-bottom: 2px solid #3AAA35;
+        }
         a {
             color: #000000;
             font-family: 'Roboto';
@@ -34,6 +37,7 @@
 .logo {
     display: inline-block;
     margin-top: 20px;
+    margin-right: 26px;
     max-width: 140px;
     max-height: 30px;
     img {

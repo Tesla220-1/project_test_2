@@ -1,6 +1,7 @@
 .header {
     min-height: 90px;
     position: relative;
+    font-family: 'Roboto', sans-serif;
     /* box-shadow: inset 0px -10px 5px 0px rgba(231, 235, 235, 0.897); */
     &__top {
         display: flex;
@@ -19,6 +20,7 @@
         line-height: 16px;
         a {
             color: #000000;
+            font-family: 'Roboto';
         }
     }
     &__top-wrapper {

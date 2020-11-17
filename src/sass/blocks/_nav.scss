@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     width: 370px;
+    font-family: 'Roboto';
     &__list {
         margin-top: 22px;
         list-style: none;
@@ -40,6 +41,7 @@
         align-items: center;
         a {
             color: rgba(0, 0, 0, 0.6);
+            font-family: 'Roboto';
         }
     }
 

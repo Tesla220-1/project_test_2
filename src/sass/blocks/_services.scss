@@ -1,0 +1,17 @@
+.services {
+    margin-top: 207px;
+    background: linear-gradient(179.99deg, rgba(255, 255, 255, 0.864) 20.84%, rgba(255, 255, 255, 0) 99.99%);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        color: #222222;
+    }
+    &__link {
+        font-weight: bold;
+        font-size: 22px; 
+        color: #222222;
+    }
+    
+}

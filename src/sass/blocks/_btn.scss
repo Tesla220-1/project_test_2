@@ -1,0 +1,33 @@
+.btn {
+    background: #ffffff;
+    border: 1px solid #50B848;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 126px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #50B848;
+    
+}
+.btn_slide {
+    width: 165px;
+    height: 36px;
+    background: #FFDE2F;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 0;
+    border: none;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+    line-height: 16px;
+}

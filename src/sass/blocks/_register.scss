@@ -35,11 +35,21 @@
         }
     }
     &__agreement {
-        font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
         margin-top: 39px;
         color: #000000;
+        display: flex;
+        input {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+        }
+        label {
+            font-family: 'Roboto';
+            margin-bottom: 0;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
     }
 }

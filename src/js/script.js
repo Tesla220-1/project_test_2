@@ -1,3 +1,4 @@
+
 const promoSlide = document.querySelectorAll('.promo__slide'),
       promoSlideTitle = document.querySelectorAll('.promo__slide-title'),
       promoSlideText = document.querySelectorAll('.promo__slide-text'),

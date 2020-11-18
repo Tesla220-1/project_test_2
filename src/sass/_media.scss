@@ -53,6 +53,31 @@
     .container {
         width: 720px;
     }
+
+
+    .header {
+        .nav {
+            flex-direction: column;
+            max-width: 177px;
+            &__info {
+                flex-wrap: wrap;
+            }
+        }
+        .logo {
+            margin-right: 15px;
+        }
+        .select {
+            margin-top: 10px;
+        }
+        &__top-wrapper {
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        &__bottom-list {
+            width: 100%;
+        }
+    }
     
     .promo {
         min-height: 500px;
@@ -118,6 +143,30 @@
     .container {
         width: 540px;
     }
+
+    .header {
+        .nav {
+            flex-direction: column;
+            max-width: 177px;
+        }
+        .select {
+            margin-top: 10px;
+        }
+        &__top-wrapper {
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            
+        }
+        &__bottom-list {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        &__bottom-item {
+            margin-right: 15px;
+            padding-bottom: 6px;
+        }
+    }
     
     .promo {
         &__slide {
@@ -178,6 +227,43 @@
         width:100%;
     }
 
+    .header {
+        padding-left: 15px;
+        .nav {
+            max-width: 165px;
+            &__info {
+                flex-direction: column;
+                width: 100%;
+                &-link {
+                    margin-top: 10px;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        .btn {
+            margin-top: 10px;
+        }
+        .select {
+            margin-top: 10px;
+        }
+        &__top-wrapper {
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            
+        }
+        &__bottom-list {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        &__bottom-item {
+            margin-right: 15px;
+            padding-bottom: 6px;
+        }
+    }
+
     .promo {
         background: url('../img/image-1.jpg') 47%/ cover no-repeat;
         padding: 0;
@@ -193,6 +279,11 @@
         &__slide {
             width: 100%;
             justify-content: space-around;
+            &_active {
+                &::after {
+                    display: none;
+                }
+            }
             &-title {
                 font-size: 20px;
             }

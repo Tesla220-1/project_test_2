@@ -5,7 +5,9 @@ const promoSlide = document.querySelectorAll('.promo__slide'),
       promoSlideButton = document.querySelectorAll('.btn_slide'),
       promoSlideBig = document.querySelector('[data-promo-slide-big]'),
       promoSlideBigTitle = document.querySelector('.promo__slide-text_big-title');
-      console.log(promoSlideBig);
+
+    let mediaQuery = window.matchMedia('(min-width: 993px)');
+
 
       for (let i = 0; i < promoSlide.length; i++) {
         promoSlide[i].addEventListener('click', function (e) {
@@ -26,7 +28,7 @@ const promoSlide = document.querySelectorAll('.promo__slide'),
         promoSlideTitle[i].classList.add('promo__slide-title_active');
         promoSlideButton[i].classList.add('btn_slide_active');
         promoSlideText[i].classList.add('promo__slide-text_active');
-        if (promoSlide[i] == promoSlideBig) {
+        if (promoSlide[i] == promoSlideBig && mediaQuery.matches) {
             promoSlide[i].style.minHeight = '277px';
             promoSlideBigTitle.classList.remove('promo__slide-text_big-title');
         }

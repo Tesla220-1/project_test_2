@@ -6,15 +6,40 @@
     .promo {
         &__slide {
             width: 220px;
+            padding: 20px 20px;
+            display: flex; 
+            justify-content: space-around;
+            box-shadow: none;
+            border-right: 1px solid gray;
+            &:last-child {
+                border-right: none;
+            }
+            &_active {
+                &::after {
+                    display: none;
+                }
+            }
             &-title {
                 font-size: 21px;
                 &_active {
                     font-size: 25px;
                 }
             }
+            &-text {
+                &_active {
+                    margin-top: 0;
+                    font-size: 16px;
+                    strong {
+                        font-size: 22px;
+                    }
+                }
+            }
             &_active {
                 width: 300px;
             }
+        }
+        .btn {
+            margin-top: 0;
         }
     }
 
@@ -56,6 +81,7 @@
 
 
     .header {
+        min-height: 105px;
         .nav {
             flex-direction: column;
             max-width: 205px;
@@ -77,33 +103,45 @@
         }
         &__bottom-list {
             width: 100%;
+            margin-top: 8px;
         }
     }
     
     .promo {
-        min-height: 500px;
+        min-height: 0;
+        padding-top: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: none;
+        background-color: #50b848;
         &__title {
-            width: 100%;
-            margin-top: 40px;
-            text-align: center;
-            font-size: 46px;
-            line-height: 1;
+            display: none;
+        }
+        &__slider {
+            position: relative;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            gap: 20px;
+            justify-items: center;
         }
         &__slide {
-            width: 180px;
-            font-size: 19px;
-            height: 150px;
-            padding: 15px;
+            /* border: 1px solid gray; */
+            border-right: none;
+            width: 300px;
+            /* &:last-child {
+                border-right: 1px solid gray;
+            } */
             &_active {
-                height: 180px;
+                min-height: 0;
+                strong {
+                    font-size: 18px;
+                }
             }
             &-title {
-                font-size: 16px;
-                line-height: 20px;
-            }
-            &-text {
-                font-size: 12px;
-                line-height: 16px;
+                &_active {
+                    font-size: 21px;
+                    line-height: 25px;
+                }
             }
         }
     }
@@ -146,27 +184,35 @@
     }
 
     .header {
-        .nav {
+        &__top {
             flex-direction: column;
+        }
+        .nav {
+            margin-right: 0;
+            max-width: 100%;
+            width: 100%;
+            flex-direction: row;
+            justify-content: flex-start;
             &__info {
-                flex-direction: column;
                 width: auto;
+                margin-right: 30px;
+                margin-top: 12px;
                 &-link {
-                    margin-top: 7px;
                     &:first-child {
                         margin-top: 0;
                     }
                 }
             }
         }
+        .logo {
+            margin-right: 30px;
+        }
         .select {
-            margin-top: 10px;
+            margin-top: 22px;
         }
         &__top-wrapper {
             width: 100%;
-            flex-wrap: wrap;
-            align-items: center;
-            
+            justify-content: flex-start; 
         }
         &__bottom-list {
             flex-wrap: wrap;
@@ -175,6 +221,9 @@
         &__bottom-item {
             margin-right: 15px;
             padding-bottom: 7px;
+            a {
+                font-size: 13px;
+            }
             &:hover {
                 padding-bottom: 5px;
                 background: 1px solid #3AAA35;
@@ -184,25 +233,36 @@
                 background: 1px solid #3AAA35;
             }
         }
+        .btn {
+            margin-top: 10px;
+        }
     }
     
     .promo {
+        &__slider {
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
         &__slide {
-            width: 144px;
-            &-title {
-                font-size: 13px;
-                line-height: 17px;
+            width: 265px;
+            &-text {
+                font-size: 14px;
+                &_active {
+                    font-size: 14px;
+                }
             }
         }
     }
 
     .services {
+        padding-top: 80px;
         &__link {
             font-size: 18px;
         }
     }
 
     .news{
+        margin-top: 80px;
         &__type {
             width: 100%; 
         }
@@ -218,12 +278,18 @@
     }
 
     .banners {
+        margin-top: 80px;
         &__wrapper {
             grid-template-columns: 1fr;
         }
     }
 
+    .register {
+        margin-top: 80px;
+    }
+
     .footer {
+        margin-top: 80px;
         &__contacts-item {
             margin-top: 17px;
         }
@@ -244,81 +310,26 @@
     .container {
         width:100%;
     }
-
+    
     .header {
-        padding-left: 15px;
-        &__top {
-            flex-direction: column;
-            }
+        padding-left: 5px;
         .nav {
-            flex-direction: row;
-            max-width: 100%;
-            justify-content: space-between;
-            align-items: flex-end;
             flex-wrap: wrap;
             &__info {
-                width: 100%;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: center;
+                margin-top: 0;
                 &-link {
-                    margin-top: 8px;
-                    margin-right: 20px;
+                    margin-top: 10px;
+                    &:first-child {
+                        margin-top: 10px;
+                    }
                 }
             }
-        }
-        .logo {
-            margin-right: 15px;
-        }
-        .btn {
-            margin-top: 10px;
-        }
-        .select {
-            margin-top: 10px;
-        }
-        &__top-wrapper {
-            width: 100%;
-            flex-wrap: wrap;
-            align-items: center;
-            
-        }
-        &__bottom-list {
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-        &__bottom-item {
-            margin-right: 15px;
         }
     }
 
     .promo {
-        background: url('../img/image-1.jpg') 47%/ cover no-repeat;
-        padding: 0;
-        &__title {
-            display: none;
-        }
         &__slider {
-            margin-top: 0;
-            flex-wrap: wrap;
-            position: static;
-            transform: translateX(0);
-        }
-        &__slide {
-            width: 100%;
-            justify-content: space-around;
-            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.16);
-            &_active {
-                &::after {
-                    display: none;
-                }
-            }
-            &-title {
-                font-size: 20px;
-            }
-            &-text {
-                font-size: 14px;
-                line-height: 20px;
-            }
+            grid-template-columns: 1fr;
         }
     }
 
@@ -328,13 +339,13 @@
             grid-template-columns: 1fr;
             display: flex;
             flex-direction: column;
-            padding-left: 15px;
+            padding-left: 5px;
         }
     }
 
     .news {
         margin-top: 90px;
-        padding-left: 15px;
+        padding-left: 5px;
         &__title {
             font-size: 35px;
         }
@@ -346,15 +357,18 @@
         }
         &__item {
             margin-right: 15px;
+            line-height: 35px;
+            padding-bottom: 0;
         }
         &__info {
             margin-top: 30px;
-            &-date {
-                margin-right: 20px;
-                font-size: 14px;
-            }
-            &-text {
-                font-size: 15px;
+            &-item {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                &:first-child {
+                    margin-top: 0;
+                }
             }
         }
     }
@@ -364,10 +378,10 @@
     }
 
     .register {
-        padding-left: 15px;
+        padding-left: 5px;
         margin-top: 90px;
         &__wrapper {
-            padding-right: 10px;
+            padding-right: 5px;
         }
         &__title {
             font-size: 34px;
@@ -378,7 +392,7 @@
         }
         &__form {
             input {
-                width: 100%;
+                width: 80%;
             }
         }
         &__agreement {
@@ -393,7 +407,7 @@
     
 
     .footer {
-        padding-left: 15px;
+        padding-left: 5px;
         margin-top: 90px;
         &__app-icons {
             margin-top: 30px;
@@ -408,7 +422,8 @@
         }
         &__additional-info {
             &-item {
-                line-height: 30px;
+                margin-top: 15px;
+                position: relative;
             }
         }
     }

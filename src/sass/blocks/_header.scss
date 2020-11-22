@@ -1,18 +1,18 @@
 .header {
     position: relative;
     font-family: 'Roboto', sans-serif;
-    min-height: 91px;
+    min-height: 88px;
     &__top {
         display: flex;
         justify-content: space-between;
     }
     &__bottom-list {
-        margin-top: 14px;
+        margin-top: 15px;
         list-style: none;
         display: flex;
         justify-content: space-between;
         margin-bottom: 0;
-        width: 776px;
+        max-width: 776px;
         color: #333333;
     }
     &__bottom-item {
@@ -20,14 +20,13 @@
         line-height: 16px;
         padding-bottom: 11px;
         &:hover {
-            padding-bottom: 9px;
             border-bottom: 2px solid #3AAA35;
         }
         &_active {
             border-bottom: 2px solid #3AAA35;
         }
         a {
-            color: #000000;
+            color: #333333;
             font-family: 'Roboto';
             text-decoration: none;
         }
@@ -42,7 +41,7 @@
 
 .logo {
     display: block;
-    margin-top: 20px;
+    margin-top: 14px;
     margin-right: 26px;
     width: 140px;
     height: 30px;
@@ -55,6 +54,7 @@
 
 .select {
     position: relative;
+    max-height: 18px;
     margin-top: 22px;
     list-style: none;
     font-family: 'Roboto';
@@ -66,7 +66,7 @@
     border: none;
     cursor: pointer;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 14px;
     font-weight: normal;
     color: #333333;
     text-transform: uppercase;

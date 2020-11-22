@@ -10,18 +10,18 @@
         list-style: none;
         display: flex;
         flex-direction: column;
-        margin-right: 55px;
+        margin-right: 77px;
         &-item {
             margin-top: 7px;
-            line-height: 24px;
             &:first-child {
                 margin-top: 0;
             }
             a {
                 color: #333333;
                 font-family: 'Roboto';
+                font-weight: normal;  
+                line-height: 24px;
                 font-size: 14px;
-                font-weight: normal;;
             }
         }
     }
@@ -88,7 +88,7 @@
         flex-wrap: wrap;
     }
     &__bank-item {
-        margin-right: 26px;
+        margin-right: 22px;
         &:last-child {
             margin-right: 0;
         }

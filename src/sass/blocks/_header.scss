@@ -1,6 +1,5 @@
 .header {
     position: relative;
-    font-family: 'Roboto', sans-serif;
     min-height: 88px;
     &__top {
         display: flex;
@@ -16,9 +15,7 @@
         color: #333333;
     }
     &__bottom-item {
-        font-size: 14px;
-        line-height: 16px;
-        padding-bottom: 11px;
+        padding-bottom: 3px;
         &:hover {
             border-bottom: 2px solid #3AAA35;
         }
@@ -26,15 +23,15 @@
             border-bottom: 2px solid #3AAA35;
         }
         a {
+            font-size: 14px;
+            line-height: 16px;
             color: #333333;
-            font-family: 'Roboto';
             text-decoration: none;
         }
     }
     &__top-wrapper {
         display: flex;
         width: 510px;   
-        font-family: 'Roboto';
         justify-content: space-between;
     }
 }
@@ -54,10 +51,8 @@
 
 .select {
     position: relative;
-    max-height: 18px;
     margin-top: 22px;
     list-style: none;
-    font-family: 'Roboto';
     margin-bottom: 0;
     padding-left: 0;
     background: #ffffff;

@@ -1,5 +1,5 @@
 .register {
-    margin-top: 181px;
+    margin-top: 177px;
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -11,9 +11,9 @@
         margin: 0;
         line-height: 58px;
         color: #000000;
+        font-family: 'Montserrat', sans-serif;
     }
     &__subtitle {
-        font-family: 'Roboto';
         font-weight: 500;
         font-size: 18px;
         margin: 0;
@@ -29,7 +29,7 @@
             height: 50px;
             padding-left: 15px;
             padding-right: 15px;
-            border: 1px solid grey;
+            border: none;
 
             margin-top: 31px;
             &:first-child {
@@ -47,7 +47,6 @@
             margin-right: 20px;
         }
         label {
-            font-family: 'Roboto';
             margin-bottom: 0;
             font-weight: 300;
             font-size: 14px;

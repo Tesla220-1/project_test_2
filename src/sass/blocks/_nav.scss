@@ -1,7 +1,6 @@
 .nav {
     display: flex;
     max-width: 380px;
-    font-family: 'Roboto';
     &__list {
         margin-top: 22px;
         list-style: none;
@@ -46,7 +45,6 @@
         }
         a {
             color: #696969;
-            font-family: 'Roboto';
             font-size: 12px;
             line-height: 14px;
         }

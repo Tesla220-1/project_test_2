@@ -6,6 +6,7 @@
         color: #000000;
         margin-bottom: 0;
         line-height: 58px;
+        font-family: 'Montserrat', sans-serif;
     }
     &__type {
         margin: 0;
@@ -13,15 +14,14 @@
         margin-top: 46px;
         list-style: none;
         display: flex;
-        width: 664px;
+        width: 666px;
         border-bottom: 1px solid #E1E1E1;
         justify-content: space-between;
     }
     &__item {
-        font-family: 'Roboto';
-        font-style: normal;
         font-size: 20px;
         line-height: 23px;
+        font-weight: 500;
         color: rgba(51, 51, 51, 0.6);
         padding-bottom: 7px;
         cursor: pointer;
@@ -35,21 +35,17 @@
         margin-top: 37px;
         &-item {
             display: flex;
-            margin-top: 18px;
-            &:first-child {
-                margin-top: 0;
-            }
         }
         &-date {
-            font-family: 'Roboto';
             font-size: 16px;
             font-weight: 300;
             color: #000000;
-            margin-right: 40px;
+            margin-right: 33px;
+            line-height: 32px;
         }
         &-text {
-            font-family: 'Roboto';
             font-size: 18px;
+            line-height: 32px;
             font-weight: 500;
             color: #000000;
         }

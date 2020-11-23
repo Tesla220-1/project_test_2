@@ -79,6 +79,18 @@
         width: 720px;
     }
 
+    .drop-down {
+        top: 100px;
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-right: 20px;
+        }
+    }
 
     .header {
         min-height: 105px;
@@ -183,6 +195,11 @@
         width: 540px;
     }
 
+
+    .drop-down {
+        top: 135px;
+    }
+    
     .header {
         &__top {
             flex-direction: column;
@@ -311,6 +328,14 @@
         width:100%;
     }
     
+
+    .drop-down {
+        width: 100%;
+        padding-left: 0;
+        top: 246px;
+        left: 0;
+    }
+
     .header {
         padding-left: 5px;
         .nav {

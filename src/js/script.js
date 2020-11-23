@@ -1,3 +1,24 @@
+const menuItem = document.querySelectorAll('.header__bottom-item'),
+      dropDown = document.querySelector('.drop-down');
+
+    for (let i = 0; i < menuItem.length; i++) {
+        menuItem[i].addEventListener('mouseenter', function() {
+            dropDown.style.display = 'block';
+        });
+        
+        menuItem[i].addEventListener('mouseleave', function() {
+            dropDown.style.display = 'none';
+        });
+    }   
+
+    dropDown.addEventListener('mouseenter', function() {
+        dropDown.style.display = 'block';
+    });
+
+    dropDown.addEventListener('mouseleave', function() {
+        dropDown.style.display = 'none';
+    });
+
 
 const promoSlide = document.querySelectorAll('.promo__slide'),
       promoSlideTitle = document.querySelectorAll('.promo__slide-title'),

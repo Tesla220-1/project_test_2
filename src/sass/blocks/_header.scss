@@ -5,7 +5,7 @@
     background: #ffffff;
     position: absolute;
     left: 0;
-    top:80px;
+    top: 100%;
     z-index: 2;
     transition: all 2s;
     display: none;
@@ -14,16 +14,17 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        a {
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 24px;
-            color: #000000;
+    }
+    &__link {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000; 
+        &:hover {
+            color: #000000; 
         }
     }
 }
-
-
 
 .header {
     position: relative;
@@ -52,12 +53,16 @@
         &_active {
             border-bottom: 2px solid #3AAA35;
         }
-        a {
+        &-link {
             display: block;
             font-size: 14px;
             line-height: 16px;
             color: #333333;
             text-decoration: none;
+            &:hover {
+                color: #333333;
+                text-decoration: none;  
+            }
         }
     }
     &__top-wrapper {

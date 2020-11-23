@@ -80,7 +80,6 @@
     }
 
     .drop-down {
-        top: 100px;
         &__list {
             display: flex;
             flex-direction: row;
@@ -195,10 +194,6 @@
         width: 540px;
     }
 
-
-    .drop-down {
-        top: 135px;
-    }
     
     .header {
         &__top {
@@ -328,14 +323,6 @@
         width:100%;
     }
     
-
-    .drop-down {
-        width: 100%;
-        padding-left: 0;
-        top: 246px;
-        left: 0;
-    }
-
     .header {
         padding-left: 5px;
         .nav {
@@ -349,6 +336,18 @@
                     }
                 }
             }
+        }
+        /* &__bottom-list {
+            position: relative;
+        } */
+    }
+
+    .drop-down {
+        width: 100%;
+        padding-left: 0;
+        top: 100%;
+        &__item {
+            margin-right: 10px;
         }
     }
 

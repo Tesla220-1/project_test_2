@@ -1,4 +1,4 @@
-const menuItem = document.querySelectorAll('.header__bottom-item'),
+/* const menuItem = document.querySelectorAll('.header__bottom-item'),
       dropDown = document.querySelector('.drop-down');
 
     for (let i = 0; i < menuItem.length; i++) {
@@ -17,7 +17,7 @@ const menuItem = document.querySelectorAll('.header__bottom-item'),
 
     dropDown.addEventListener('mouseleave', function() {
         dropDown.style.display = 'none';
-    });
+    }); */
 
 
 const promoSlide = document.querySelectorAll('.promo__slide'),

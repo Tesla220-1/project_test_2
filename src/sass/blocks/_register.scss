@@ -35,6 +35,9 @@
             &:first-child {
                 margin-top: 0;
             }
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.3);
+            }
         }
     }
     &__agreement {
